@@ -1,0 +1,127 @@
+.testimonials {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background: cornflowerblue; */
+}
+.testimonials h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.testimonials h1::after,
+.testimonials h1::before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 70px;
+  height: 5px;
+  background: #00002e;
+}
+.testimonials h1::before {
+  left: -40%;
+}
+.testimonials h1::after {
+  right: -40%;
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none !important;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  background: #ebebeb;
+
+  filter: blur(4px);
+  border-radius: 10px;
+}
+.swiper-slide-active {
+  background: #fff;
+  filter: blur(0);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+}
+.testimonialBox {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  padding-top: 90px;
+  color: #999;
+}
+.testimonialBox .quote {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  opacity: 0.4;
+}
+.testimonialBox .contents p {
+  font-size: 15px;
+  text-align: center;
+  color: #00002e;
+}
+.testimonialBox .details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.testimonialBox .details .imgIcon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.testimonialBox .details .imgIcon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonialBox .details h3 {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.1em;
+  color: #1be8ae;
+}
+.testimonialBox .details h3 span {
+  font-size: 12px;
+  color: #666;
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials {
+    height: 70vh;
+  }
+  .testimonials h1::after,
+  .testimonials h1::before {
+    width: 60px;
+  }
+  .testimonials h1::before {
+    left: -30%;
+  }
+  .testimonials h1::after {
+    right: -30%;
+  }
+}

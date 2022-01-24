@@ -1,18 +1,15 @@
 import React from "react";
 import "./Styles/About.css";
-import logo from "./../Assets/Images/logoo.png";
+import img2 from "./../Assets/Images/img4.gif";
 
 const About = () => {
   return (
     // <!--==================== ABOUT ====================-->
-    <section class="about section container" id="about">
-      <div class="about__container grid">
-        <img src={logo} alt="" class="about__img" />
-
-        <div class="about__data">
-          <h2 class="section__title about__title">Its about "Planning"</h2>
-
-          <p class="about__description">
+    <section className="about section container" id="about">
+      <div className="about__container grid">
+        <div className="about__data">
+          <h2 className="section__title about__title">Its about "Planning"</h2>
+          <p className="about__description">
             A good Financial Planner goes beyond managing a client’s finances;
             he strives to understand a client's desires and focuses his energies
             & expertise to bring them to life. At Finstorlabs, being an expert
@@ -22,8 +19,9 @@ const About = () => {
             your investments.
           </p>
 
-          <div class="about__details"></div>
+          <div className="about__details"></div>
         </div>
+        <img src={img2} alt="about" className="about__img" />
       </div>
     </section>
   );

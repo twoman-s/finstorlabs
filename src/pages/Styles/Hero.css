@@ -1,0 +1,55 @@
+.hero {
+  background-image: url("./../../Assets/Images/bg.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.blend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.content {
+  width: 50%;
+  padding-top: 40vh;
+  padding-left: 5rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.content h1 {
+  font-weight: 900;
+  text-shadow: 5px 2px #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+a.join__btn {
+  position: relative;
+  background: linear-gradient(to right, #147dd5, #1adcb2);
+  padding: 10px 20px 10px 20px;
+  border-radius: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 70vh;
+  }
+  .content {
+    width: 100%;
+    padding: 1rem;
+    padding-top: 30vh;
+    font-size: 1.5rem;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+  }
+  a.join__btn {
+    border: 1px solid #fff;
+  }
+}

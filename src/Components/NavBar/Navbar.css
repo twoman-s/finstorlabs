@@ -67,6 +67,10 @@
   .nav__logo img {
     width: 150px;
   }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .nav__close {
@@ -80,9 +84,12 @@
 .nav__list {
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  /* row-gap: 1.5rem !important; */
 }
 
+.nav__item {
+  padding: 1rem;
+}
 .nav__link {
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -130,7 +137,7 @@
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 3rem;
+    /* column-gap: 3rem !important; */
   }
   .nav__menu {
     margin-left: auto;
