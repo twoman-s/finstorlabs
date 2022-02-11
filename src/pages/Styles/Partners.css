@@ -1,0 +1,110 @@
+.partners-wrapper {
+  position: relative;
+  background: #0d0a1b;
+}
+.partners-wrapper h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  opacity: 40%;
+}
+.partners-wrapper h1::after,
+.partners-wrapper h1::before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 70px;
+  height: 5px;
+  background: #fff;
+  opacity: 40%;
+}
+.partners-wrapper h1::before {
+  left: -40%;
+}
+.partners-wrapper h1::after {
+  right: -40%;
+}
+
+.partners {
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding: 7.5rem 9.375rem;
+  flex-wrap: wrap;
+}
+.partnerlist {
+  /* flex: 1; */
+  height: 180px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.partnerlist.zerodha {
+  border-right: 1px solid #252232;
+  border-bottom: 1px solid #252232;
+}
+.partnerlist.upstox {
+  border-bottom: 1px solid #252232;
+}
+.partnerlist.smallcase {
+  border-left: 1px solid #252232;
+  border-bottom: 1px solid #252232;
+}
+.partnerlist.hdfc {
+  border-right: 1px solid #252232;
+}
+.partnerlist.adityabirla {
+  border-right: 1px solid #252232;
+}
+
+.partnerlist img {
+  width: 150px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: 0.4s ease-in-out;
+}
+.partnerlist img:hover {
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter: none;
+}
+@media screen and (max-width: 767px) {
+  .partners {
+    padding: 100px 2.25rem 2.25rem;
+  }
+  .partnerlist {
+    width: 50%;
+    height: 130px;
+  }
+  .partnerlist.zerodha {
+    border-right: 1px solid #252232;
+    border-bottom: 1px solid #252232;
+  }
+  .partnerlist.upstox {
+    border-bottom: 1px solid #252232;
+  }
+  .partnerlist.smallcase {
+    border-left: none;
+    border-right: 1px solid #252232;
+    border-bottom: 1px solid #252232;
+  }
+  .partnerlist.hdfc {
+    border-right: none;
+    border-bottom: 1px solid #252232;
+  }
+  .partnerlist img {
+    width: 100px;
+  }
+  .partners-wrapper h1 {
+    font-size: 1.7rem;
+  }
+  .partners-wrapper h1::after,
+  .partners-wrapper h1::before {
+    width: 60px;
+  }
+}

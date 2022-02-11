@@ -1,22 +1,24 @@
 import React from "react";
 import "./Styles/Quote.css";
+import signature from "./../Assets/Images/signature.png";
 
 const Quote = () => {
   return (
-    <section>
-      <div className="quote ">
-        <img
-          src="https://finstorlabs.in/wp-content/uploads/2021/04/Warren-Buffett-HD-Wallpaper-scaled-1-768x576.jpg"
-          alt=""
-        />
-        <h3>
-          If you don't find a way to make money while you sleep, you will work
-          until you die.
-        </h3>
-        <span>--Warren Buffet</span>
+    <div className="quote-wrapper">
+      <div class="box">
+        <i class="fas fa-quote-right fa2"></i>
+        <div class="text">
+          <i class="fas fa-quote-left fa1"></i>
+          <div>
+            <p>
+              If you don't find a way to make money while you sleep, you will
+              work until you die.
+            </p>
+            <img className="signature" src={signature} alt="" />
+          </div>
+        </div>
       </div>
-      ;
-    </section>
+    </div>
   );
 };
 

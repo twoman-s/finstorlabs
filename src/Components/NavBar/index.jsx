@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
-import logo from "./../../Assets/Images/logo.png";
+import logo from "./../../Assets/Images/wlogo.png";
+import plogo from "./../../Assets/Images/plogo.png";
+
 
 const NavBar = () => {
   useEffect(() => {
@@ -8,6 +10,7 @@ const NavBar = () => {
     const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
       navClose = document.getElementById("nav-close");
+      const logoImg = document.getElementById("logo")
 
     /*===== MENU SHOW =====*/
     /* Validate if constant exists */
@@ -38,14 +41,24 @@ const NavBar = () => {
     /*=============== CHANGE BACKGROUND HEADER ===============*/
     function scrollHeader() {
       const header = document.getElementById("header");
+      const menu = document.getElementById("menu");
+      header.style.backgroundColor=""
       // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-      if (this.scrollY >= 80) header.classList.add("scroll-header");
-      else header.classList.remove("scroll-header");
+      if (this.scrollY >= 80) {header.classList.add("scroll-header");
+      header.style.backgroundColor="#fff"
+      logoImg.src=plogo
+      menu.style.color="#00002e"
+      }
+      else {header.classList.remove("scroll-header");
+      header.style.backgroundColor=""
+      logoImg.src=logo    
+      menu.style.color="#fff"  
+      }
     }
     window.addEventListener("scroll", scrollHeader);
     /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
     const sections = document.querySelectorAll("section[id]");
-
+    console.log(sections)
     function scrollActive() {
       const scrollY = window.pageYOffset;
 
@@ -71,7 +84,7 @@ const NavBar = () => {
     <header className="header" id="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">
-          <img src={logo} alt="Finstorblabs" />
+          <img src={logo} alt="Finstorblabs" id="logo" />
         </a>
 
         <div className="nav__menu" id="nav-menu">
@@ -112,7 +125,7 @@ const NavBar = () => {
           {/* <i className="ri-moon-line change-theme" id="theme-button"></i> */}
 
           <div className="nav__toggle" id="nav-toggle">
-            <i className="ri-menu-line"></i>
+            <i className="ri-menu-line" id="menu"></i>
           </div>
         </div>
       </nav>
