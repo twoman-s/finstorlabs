@@ -2,10 +2,10 @@ import React from "react";
 import Footer from "../Components/Footer";
 import NavBar from "../Components/NavBar";
 import About from "./About";
+import ContactUs from "./ContactUs";
 import Hero from "./Hero";
-import Home from "./Home";
 import Partners from "./Partners";
-import Products from "./Products";
+import Services from "./Services";
 import Quote from "./Quote";
 import Testimonials from "./Testimonials";
 
@@ -16,11 +16,11 @@ const Main = () => {
       <main className="main">
         <Hero />
         <Quote />
-        <Products />
-        <Home />
+        <Services />
         <About />
         <Partners />
         <Testimonials />
+        <ContactUs />
         <Footer />
       </main>
     </>

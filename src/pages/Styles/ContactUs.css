@@ -1,0 +1,214 @@
+.contact {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.contact-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.cHead {
+  width: 100%;
+  text-align: center;
+}
+h1.contactHead {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  /* width: 100%; */
+  display: inline-block;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+h1.contactHead::after,
+h1.contactHead::before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 70px;
+  height: 5px;
+  background: #00002e;
+}
+h1.contactHead::before {
+  right: 0;
+}
+h1.contactHead::after {
+  left: 0;
+}
+
+.contact-container {
+  position: relative;
+  min-width: 1100px;
+  min-height: 530px;
+}
+.contact-container .contactImg {
+  position: absolute;
+  top: 40px;
+  width: 400px;
+  height: calc(100% - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 20px;
+}
+.contactImg img {
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25); */
+  border-radius: 20px;
+}
+.contact-container .contactForm {
+  position: absolute;
+  padding: 60px 40px;
+  padding-left: 250px;
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  height: 100%;
+  background: #ebebeb;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contactForm h2 {
+  color: #00002e;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.contactForm .formBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  padding-top: 20px;
+}
+.contactForm .formBox .inputBox {
+  position: relative;
+  margin-bottom: 30px;
+}
+.contactForm .formBox .inputBox span {
+  color: #00002e;
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  pointer-events: none;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+.contactForm .formBox .inputBox.w50 {
+  width: 47%;
+}
+.contactForm .formBox .inputBox.w100 {
+  width: 100%;
+}
+.contactForm .formBox .inputBox input,
+.contactForm .formBox .inputBox textarea {
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #00002e;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid #00002e;
+}
+.contactForm .formBox .inputBox textarea {
+  height: 120px;
+}
+
+.contactForm .formBox .inputBox input:focus ~ span,
+.contactForm .formBox .inputBox input:valid ~ span,
+.contactForm .formBox .inputBox textarea:focus ~ span,
+.contactForm .formBox .inputBox textarea:valid ~ span {
+  transform: translateY(-20px);
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.contactForm .formBox .inputBox input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  background: #00002e;
+  color: #fff;
+  max-width: 150px;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+}
+.contactForm .formBox .inputBox input[type="submit"]:hover {
+  background: linear-gradient(
+    to right,
+    rgba(18, 104, 221, 0.5),
+    rgba(24, 180, 194, 0.5)
+  );
+  color: #00002e;
+}
+@media screen and (max-width: 1200px) {
+  .contact {
+    margin-bottom: 110px;
+  }
+  .contact-container {
+    width: 90%;
+    min-width: auto;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactImg,
+  .contactForm {
+    position: relative !important;
+  }
+  .contactImg {
+    top: -30px !important;
+    height: calc(100% - 60px);
+  }
+  .contactImg img {
+    width: 95%;
+  }
+  .contact-container .contactForm {
+    padding: 20px;
+    padding-top: 60px;
+    margin-left: 0;
+    width: 99%;
+  }
+  .contact-container .contactForm h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .contactForm .formBox .inputBox input,
+  .contactForm .formBox .inputBox textarea {
+    font-size: 15px;
+  }
+  .contactForm .formBox .inputBox span {
+    font-size: 13px;
+  }
+  .contactForm .formBox .inputBox input:focus ~ span,
+  .contactForm .formBox .inputBox input:valid ~ span,
+  .contactForm .formBox .inputBox textarea:focus ~ span,
+  .contactForm .formBox .inputBox textarea:valid ~ span {
+    font-weight: 300;
+    font-size: 10px;
+  }
+  .contactForm .formBox .inputBox input[type="submit"] {
+    max-width: 120px;
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1.contactHead {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+  }
+}

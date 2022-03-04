@@ -9,7 +9,7 @@ const ServicesCard = ({ data }) => {
       <div class="card-content">
         <h2 class="head">{data.head}</h2>
         <p>{data.content}</p>
-        <a href="#">Read More</a>
+        {/* <a href="#">Read More</a> */}
       </div>
     </div>
   );

@@ -1,16 +1,19 @@
 .partners-wrapper {
   position: relative;
-  background: #0d0a1b;
+  /* background: #ebebeb; */
+}
+.pHead {
+  width: 100%;
+  text-align: center;
 }
 .partners-wrapper h1 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
+  position: relative;
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
-  opacity: 40%;
+  color: #00002e;
+  display: inline-block;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 .partners-wrapper h1::after,
 .partners-wrapper h1::before {
@@ -19,14 +22,13 @@
   content: "";
   width: 70px;
   height: 5px;
-  background: #fff;
-  opacity: 40%;
+  background: #00002e;
 }
 .partners-wrapper h1::before {
-  left: -40%;
+  left: 0;
 }
 .partners-wrapper h1::after {
-  right: -40%;
+  right: 0;
 }
 
 .partners {

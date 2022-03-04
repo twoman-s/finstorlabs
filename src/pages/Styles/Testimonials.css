@@ -1,21 +1,30 @@
+.testimonialsSection {
+  margin-top: 30px;
+}
 .testimonials {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.testimonials h1 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
+.tHead {
+  width: 100%;
+  text-align: center;
+}
+.testimonialsSection h1 {
+  position: relative;
   font-size: 2rem;
   font-weight: bold;
+  /* width: 100%; */
+  margin-bottom: 40px;
+  display: inline-block;
+  padding-right: 80px;
+  padding-left: 80px;
 }
-.testimonials h1::after,
-.testimonials h1::before {
+.testimonialsSection h1::after,
+.testimonialsSection h1::before {
   position: absolute;
   top: 50%;
   content: "";
@@ -23,11 +32,11 @@
   height: 5px;
   background: #00002e;
 }
-.testimonials h1::before {
-  left: -40%;
+.testimonialsSection h1::before {
+  right: 0;
 }
-.testimonials h1::after {
-  right: -40%;
+.testimonialsSection h1::after {
+  left: 0;
 }
 
 .slider-wrapper {
@@ -82,16 +91,17 @@ img.tquote {
 }
 @media screen and (max-width: 767px) {
   .testimonials {
-    height: 85vh;
+    height: auto !important;
   }
 
-  .testimonials h1 {
+  .testimonialsSection h1 {
     font-size: 1.7rem;
   }
-  .testimonials h1::after,
-  .testimonials h1::before {
+  .testimonialsSection h1::after,
+  .testimonialsSection h1::before {
     width: 60px;
   }
+
   .slider-wrapper {
     width: 80%;
   }

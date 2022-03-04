@@ -3,7 +3,9 @@ import "./Styles/Partners.css";
 const Partners = () => {
   return (
     <div className="partners-wrapper">
-      <h1>Our Partners</h1>
+      <div className="pHead">
+        <h1>Our Partners</h1>
+      </div>
       <div className="partners">
         <div className="partnerlist zerodha">
           <img
@@ -37,7 +39,7 @@ const Partners = () => {
         </div>
         <div className="partnerlist tickertape">
           <img
-            src="https://www.tickertape.in/images/svg/logos/tickertape-logo.svg"
+            src="https://levelupedu.co.in/static/media/levelup.297357b5.svg"
             alt=""
           />
         </div>

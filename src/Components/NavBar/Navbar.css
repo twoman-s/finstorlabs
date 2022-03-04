@@ -1,5 +1,6 @@
 /*=============== HEADER ===============*/
 .header {
+  background: #fff;
   width: 100%;
   position: fixed;
   top: 0;
@@ -69,9 +70,6 @@
   .nav__list {
     display: flex;
     flex-direction: column;
-  }
-  .ri-menu-line {
-    color: #fff;
   }
 }
 

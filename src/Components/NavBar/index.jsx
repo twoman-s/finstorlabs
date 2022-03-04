@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
-import logo from "./../../Assets/Images/wlogo.png";
 import plogo from "./../../Assets/Images/plogo.png";
+import { useNavigate } from "react-router-dom";
 
-
-const NavBar = () => {
+const NavBar = ({ data }) => {
+  const navigate = useNavigate();
   useEffect(() => {
     /*=============== SHOW MENU ===============*/
     const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
       navClose = document.getElementById("nav-close");
-      const logoImg = document.getElementById("logo")
+    const logoImg = document.getElementById("logo");
 
     /*===== MENU SHOW =====*/
     /* Validate if constant exists */
@@ -42,25 +42,21 @@ const NavBar = () => {
     function scrollHeader() {
       const header = document.getElementById("header");
       const menu = document.getElementById("menu");
-      header.style.backgroundColor=""
+      header.style.backgroundColor = "";
       // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-      if (this.scrollY >= 80) {header.classList.add("scroll-header");
-      header.style.backgroundColor="#fff"
-      logoImg.src=plogo
-      menu.style.color="#00002e"
-      }
-      else {header.classList.remove("scroll-header");
-      header.style.backgroundColor=""
-      logoImg.src=logo    
-      menu.style.color="#fff"  
+      if (this.scrollY >= 80) {
+        header.classList.add("scroll-header");
+        header.style.backgroundColor = "#fff";
+      } else {
+        header.classList.remove("scroll-header");
+        header.style.backgroundColor = "";
       }
     }
     window.addEventListener("scroll", scrollHeader);
     /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
     const sections = document.querySelectorAll("section[id]");
-    console.log(sections)
     function scrollActive() {
-      const scrollY = window.pageYOffset;
+      const scrollY = window.pageYOffset + 90;
 
       sections.forEach((current) => {
         const sectionHeight = current.offsetHeight,
@@ -80,41 +76,80 @@ const NavBar = () => {
     }
     window.addEventListener("scroll", scrollActive);
   }, []);
+
+  const handleScrollClick = (e) => {
+    e.preventDefault();
+    if (data === "coursedetails") {
+      navigate("/");
+    } else {
+      var id = e.target.getAttribute("href").slice(1);
+      const section = document.getElementById(id);
+      window.scrollTo({
+        top: section.offsetTop - 90,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <header className="header" id="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">
-          <img src={logo} alt="Finstorblabs" id="logo" />
+          <img src={plogo} alt="Finstorblabs" id="logo" />
         </a>
 
         <div className="nav__menu" id="nav-menu">
-          <ul className="nav__list">
-            <li className="nav__item">
-              <a href="#hero" className="nav__link active-link">
-                Home
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#about" className="nav__link">
-                About
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#products" className="nav__link">
-                Products
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#faqs" className="nav__link">
-                FAQs
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#contact" className="nav__link">
-                Contact Us
-              </a>
-            </li>
-          </ul>
+          {data ? (
+            <ul className="nav__list">
+              <li className="nav__item">
+                <a
+                  href="#hero"
+                  className="nav__link active-link"
+                  onClick={handleScrollClick}
+                >
+                  Home
+                </a>
+              </li>
+            </ul>
+          ) : (
+            <ul className="nav__list">
+              <li className="nav__item">
+                <a
+                  href="#hero"
+                  className="nav__link active-link"
+                  onClick={handleScrollClick}
+                >
+                  Home
+                </a>
+              </li>
+              <li className="nav__item">
+                <a
+                  href="#services"
+                  className="nav__link"
+                  onClick={handleScrollClick}
+                >
+                  Services
+                </a>
+              </li>
+              <li className="nav__item">
+                <a
+                  href="#aboutus"
+                  className="nav__link"
+                  onClick={handleScrollClick}
+                >
+                  About Us
+                </a>
+              </li>
+              <li className="nav__item">
+                <a
+                  href="#contactus"
+                  className="nav__link"
+                  onClick={handleScrollClick}
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          )}
 
           <div className="nav__close" id="nav-close">
             <i className="ri-close-line"></i>

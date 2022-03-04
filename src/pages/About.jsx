@@ -1,11 +1,14 @@
 import React from "react";
 import "./Styles/About.css";
-import img2 from "./../Assets/Images/img4.gif";
+import img2 from "./../Assets/Images/img1.jpg";
 
 const About = () => {
   return (
     // <!--==================== ABOUT ====================-->
-    <section className="about section container" id="about">
+    <section className="about container" id="aboutus">
+      <div className="aHead">
+        <h1 className="aboutHead">About Us</h1>
+      </div>
       <div className="about__container grid">
         <div className="about__data">
           <h2 className="section__title about__title">Its about "Planning"</h2>

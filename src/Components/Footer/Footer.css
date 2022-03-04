@@ -39,7 +39,7 @@ footer {
   flex: 1;
   padding: 30px;
   color: #fff;
-  opacity: 50%;
+  opacity: 80%;
 }
 .fabout .ImgBx {
   width: 250px;
@@ -99,7 +99,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  opacity: 50%;
+  opacity: 70%;
   padding: 15px;
 }
 

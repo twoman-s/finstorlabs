@@ -13,13 +13,15 @@ const Testimonials = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 6000,
+    speed: 600,
+    autoplaySpeed: 4000,
   };
   return (
-    <section>
+    <section className="testimonialsSection">
+      <div className="tHead">
+        <h1 className="testimonialsHead">Testimonials</h1>
+      </div>
       <div className="testimonials">
-        <h1>Testimonials</h1>
         <div className="slider-wrapper">
           <Slider {...settings}>
             {data.map((testimonoal) => {
