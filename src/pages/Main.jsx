@@ -8,6 +8,7 @@ import Partners from "./Partners";
 import Services from "./Services";
 import Quote from "./Quote";
 import Testimonials from "./Testimonials";
+import Products from "./Products";
 
 const Main = () => {
   return (
@@ -16,8 +17,9 @@ const Main = () => {
       <main className="main">
         <Hero />
         <Quote />
-        <Services />
+        <Products />
         <About />
+        <Services />
         <Partners />
         <Testimonials />
         <ContactUs />

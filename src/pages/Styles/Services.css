@@ -32,6 +32,30 @@
   height: 500px;
 }
 
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  width: 47px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.far.fa-arrow-alt-circle-right,
+.far.fa-arrow-alt-circle-left {
+  color: grey !important;
+  font-size: 35px;
+}
+.slick-arrow.slick-prev::before,
+.slick-arrow.slick-next::before {
+  display: none;
+}
+/* .slick-arrow.slick-prev {
+  left: -10px !important;
+}
+
+.slick-arrow.slick-next {
+  right: -10px !important;
+} */
 .services-wrapper h1::before {
   right: 0;
 }

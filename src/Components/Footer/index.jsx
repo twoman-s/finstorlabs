@@ -35,7 +35,7 @@ const Footer = () => {
           </h4>
         </div>
         <div className="social-media">
-          <h1>Follow US</h1>
+          <h1>Follow Us</h1>
           <a href="">
             <i class="ri-instagram-line"></i>
           </a>

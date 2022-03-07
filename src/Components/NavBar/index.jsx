@@ -123,11 +123,11 @@ const NavBar = ({ data }) => {
               </li>
               <li className="nav__item">
                 <a
-                  href="#services"
+                  href="#products"
                   className="nav__link"
                   onClick={handleScrollClick}
                 >
-                  Services
+                  Products
                 </a>
               </li>
               <li className="nav__item">
@@ -139,6 +139,16 @@ const NavBar = ({ data }) => {
                   About Us
                 </a>
               </li>
+              <li className="nav__item">
+                <a
+                  href="#services"
+                  className="nav__link"
+                  onClick={handleScrollClick}
+                >
+                  Services
+                </a>
+              </li>
+
               <li className="nav__item">
                 <a
                   href="#contactus"

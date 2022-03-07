@@ -9,7 +9,7 @@ const About = () => {
       <div className="aHead">
         <h1 className="aboutHead">About Us</h1>
       </div>
-      <div className="about__container grid">
+      <div className="about__container">
         <div className="about__data">
           <h2 className="section__title about__title">Its about "Planning"</h2>
           <p className="about__description">
@@ -21,10 +21,10 @@ const About = () => {
             with them. We believe Financial Planning is not just about growing
             your investments.
           </p>
-
-          <div className="about__details"></div>
         </div>
-        <img src={img2} alt="about" className="about__img" />
+        <div className="about__details">
+          <img src={img2} alt="about" className="about__img" />
+        </div>
       </div>
     </section>
   );

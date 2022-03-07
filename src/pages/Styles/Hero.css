@@ -50,9 +50,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  #hero {
-    height: 70vh !important;
-  }
   .heroContainer {
     padding: 30px;
     display: flex;

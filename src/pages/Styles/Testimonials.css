@@ -40,7 +40,7 @@
 }
 
 .slider-wrapper {
-  width: 50%;
+  width: 80%;
 }
 .slick-arrow.slick-next {
   right: -70px;
@@ -62,7 +62,7 @@
 }
 .slider-wrapper .slick-slider .slick-dots {
   position: relative;
-  margin-top: -120px;
+  margin-top: -90px;
 }
 .timgBx img {
   width: 150px;
@@ -106,10 +106,10 @@ img.tquote {
     width: 80%;
   }
   .slick-arrow.slick-next {
-    right: -15px;
+    right: -35px;
   }
   .slick-arrow.slick-prev {
-    left: -30px;
+    left: -35px;
   }
   .slick-prev::before,
   .slick-next::before {

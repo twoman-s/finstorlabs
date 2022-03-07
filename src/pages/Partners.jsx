@@ -1,5 +1,11 @@
 import React from "react";
 import "./Styles/Partners.css";
+import hdfc from "./../Assets/Partners/hdfc.png";
+import zerodha from "./../Assets/Partners/zerodha.png";
+import smallcase from "./../Assets/Partners/smallcase.png";
+import tradingview from "./../Assets/Partners/tradingview.png";
+import upstox from "./../Assets/Partners/upstox.png";
+import levelup from "./../Assets/Partners/levelup.png";
 const Partners = () => {
   return (
     <div className="partners-wrapper">
@@ -8,40 +14,22 @@ const Partners = () => {
       </div>
       <div className="partners">
         <div className="partnerlist zerodha">
-          <img
-            src="https://finstorlabs.in/wp-content/uploads/2021/04/z1.png"
-            alt=""
-          />
+          <img src={zerodha} alt="" />
         </div>
         <div className="partnerlist upstox">
-          <img
-            src="https://finstorlabs.in/wp-content/uploads/2021/04/u1.png"
-            alt=""
-          />
+          <img src={upstox} alt="" />
         </div>
         <div className="partnerlist smallcase">
-          <img
-            src="https://finstorlabs.in/wp-content/uploads/2021/04/s1.png"
-            alt=""
-          />
+          <img src={smallcase} alt="" />
         </div>
         <div className="partnerlist hdfc">
-          <img
-            src="https://finstorlabs.in/wp-content/uploads/2021/04/h1.png"
-            alt=""
-          />
+          <img src={hdfc} alt="" />
         </div>
         <div className="partnerlist adityabirla">
-          <img
-            src="https://finstorlabs.in/wp-content/uploads/2021/04/a1.png"
-            alt=""
-          />
+          <img src={tradingview} alt="" />
         </div>
         <div className="partnerlist tickertape">
-          <img
-            src="https://levelupedu.co.in/static/media/levelup.297357b5.svg"
-            alt=""
-          />
+          <img src={levelup} alt="" />
         </div>
       </div>
     </div>

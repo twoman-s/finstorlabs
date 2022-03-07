@@ -3,12 +3,13 @@ import "./Styles/CourseDetails.css";
 import NavBar from "../Components/NavBar";
 import course from "../Assets/Images/course.png";
 import { coursedetails } from "./Data/CourseDetailsData";
+import Footer from "../Components/Footer";
 
 const CourseDetails = () => {
   return (
     <>
       <NavBar data="coursedetails" />
-      <section>
+      <section id="coursedetails">
         <div className="courseWrapper">
           <div className="courseDetails">
             <div className="courseImg">
@@ -44,6 +45,7 @@ const CourseDetails = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

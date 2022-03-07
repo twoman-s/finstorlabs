@@ -1,6 +1,6 @@
 /*=============== ABOUT ===============*/
 .about {
-  margin-top: 110px;
+  margin-top: 30px;
   margin-bottom: 90px;
   position: relative;
 }
@@ -34,7 +34,13 @@ h1.aboutHead::after {
   left: 0;
 }
 .about__container {
-  row-gap: 2rem;
+  display: flex;
+}
+.about__data {
+  width: 50%;
+}
+.about__details {
+  width: 50%;
 }
 .about__head {
   font-size: var(--big-font-size);
@@ -125,6 +131,12 @@ h1.aboutHead::after {
 }
 
 @media screen and (max-width: 767px) {
+  .about__data {
+    width: 100%;
+  }
+  .about__details {
+    display: none;
+  }
   h1.aboutHead {
     font-size: 1.7rem;
   }

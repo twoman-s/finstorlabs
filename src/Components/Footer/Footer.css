@@ -41,11 +41,15 @@ footer {
   color: #fff;
   opacity: 80%;
 }
+.fabout {
+  position: relative;
+  top: -25px;
+}
 .fabout .ImgBx {
   width: 250px;
   border-bottom: 1px solid #fff;
   border-bottom-left-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .fabout p {
   padding: 10px;
@@ -54,6 +58,9 @@ footer {
 .social-media h1 {
   position: relative;
   color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 .address h1::after,
 .social-media h1::after {
@@ -61,7 +68,7 @@ footer {
   top: 50%;
   content: "";
   width: 100px;
-  height: 5px;
+  height: 3px;
   background: #fff;
   margin-left: 10px;
 }

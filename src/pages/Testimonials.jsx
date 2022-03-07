@@ -5,16 +5,60 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { data } from "./Data/TestimonialsData";
+const PrevButton = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div className={className} onClick={onClick}>
+      <i className="far fa-arrow-alt-circle-left"></i>
+    </div>
+  );
+};
+const NextButton = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div className={className} onClick={onClick}>
+      <i className="far fa-arrow-alt-circle-right"></i>
+    </div>
+  );
+};
 
 const Testimonials = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
+    initialSlide: 0,
     autoplay: true,
-    speed: 600,
+    speed: 800,
     autoplaySpeed: 4000,
+    centerMode: true,
+    centerPadding: "0px",
+    prevArrow: <PrevButton />,
+    nextArrow: <NextButton />,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 969,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        },
+      },
+    ],
   };
   return (
     <section className="testimonialsSection">

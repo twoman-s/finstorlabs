@@ -5,6 +5,23 @@ import { data } from "./Data/ServicesData";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+const PrevButton = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div className={className} onClick={onClick}>
+      <i className="far fa-arrow-alt-circle-left"></i>
+    </div>
+  );
+};
+const NextButton = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div className={className} onClick={onClick}>
+      <i className="far fa-arrow-alt-circle-right"></i>
+    </div>
+  );
+};
 const Services = () => {
   const settings = {
     dots: true,
@@ -17,6 +34,8 @@ const Services = () => {
     autoplaySpeed: 4000,
     centerMode: true,
     centerPadding: "0px",
+    prevArrow: <PrevButton />,
+    nextArrow: <NextButton />,
     responsive: [
       {
         breakpoint: 767,
