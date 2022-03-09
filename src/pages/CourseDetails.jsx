@@ -92,7 +92,9 @@ const CourseDetails = () => {
                   <li>Certified Investment Planning Specialist</li>
                   <li>Certified Retirement and Tax Planning Specialist</li>
                   <li>Block Chain expert and Crypto miner</li>
-                  <li>Leading NFT Collector @ WazirX NFT(Verified Collector</li>
+                  <li>
+                    Leading NFT Collector @ WazirX NFT(Verified Collector)
+                  </li>
                   <li>100K YouTube Subscribers</li>
                 </ul>
               </div>

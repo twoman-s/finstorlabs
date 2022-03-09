@@ -103,7 +103,10 @@ const Products = () => {
           <article class="pcard">
             <div class="card__img">
               <h2 className="cardHead">Coming Soon</h2>
-              <p>We always find new products</p>
+              <p>
+                We are launching new products and services soon to help traders
+                and investors.
+              </p>
             </div>
             <div class="card__name">
               <a

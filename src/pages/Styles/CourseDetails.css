@@ -233,13 +233,14 @@ h1.instructorHead::after {
   width: 50%;
   margin-bottom: 30px;
 }
-.modules h2 span {
-  color: #26d7ab;
-}
 .modules h2 {
   font-size: 20px;
   margin-bottom: 15px;
 }
+.modules h2 span {
+  color: #26d7ab;
+}
+
 .modules p {
   color: #39385a;
   display: flex;

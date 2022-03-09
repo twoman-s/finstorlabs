@@ -52,17 +52,15 @@ h1.productHead::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* margin-left: 3.5rem; */
 }
 .pcard {
   position: relative;
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
-  /* padding: 1.5rem 2rem; */
   border-radius: 1rem;
   overflow: hidden;
-  background: #fff;
   height: 350px;
   box-shadow: 0 0.5rem 1rem #d1d9e6;
   width: 290px !important;
@@ -73,11 +71,13 @@ h1.productHead::after {
   /* font-size: 18px; */
   text-align: center;
   width: fit-content;
-  border-bottom: 1px solid #00002e;
+  color: #1d1b4c;
+  border-bottom: 1px solid #1d1b4c;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 7px;
   margin-bottom: 30px;
+  font-weight: 900;
 }
 .card__img p {
   font-size: 16px;
@@ -105,7 +105,7 @@ h1.productHead::after {
   color: #fff;
   font-weight: bold;
   transition: 0.5s;
-  background: linear-gradient(to top, #1268dd, #18b4c2);
+  background-image: linear-gradient(to top, #1268dd, #18b4c2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,8 +113,9 @@ h1.productHead::after {
 .card__name a {
   color: #fff;
 }
+
 .pcard:hover {
-  box-shadow: 0 0.5rem 1rem #d1d9e6;
+  box-shadow: 0 0.5rem 1rem #00000090;
   width: 300px !important;
 }
 .pcard:hover .card__name {
