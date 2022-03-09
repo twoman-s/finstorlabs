@@ -2,19 +2,21 @@
   height: auto;
   padding: 3rem;
 }
+
 .pHead {
   width: 100%;
   text-align: center;
 }
 h1.productHead {
   position: relative;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   /* width: 100%; */
   margin-bottom: 40px;
   display: inline-block;
   padding-right: 80px;
   padding-left: 80px;
+  color: #1d92f2;
 }
 h1.productHead::after,
 h1.productHead::before {
@@ -22,8 +24,8 @@ h1.productHead::before {
   top: 50%;
   content: "";
   width: 70px;
-  height: 5px;
-  background: #00002e;
+  height: 4px;
+  background: #1d92f2;
 }
 h1.productHead::before {
   right: 0;
@@ -43,36 +45,53 @@ h1.productHead::after {
   height: auto;
 }
 .card__img {
-  width: 180px;
-  height: auto;
+  width: 80%;
   padding: 3rem 0;
   transition: 0.5s;
-}
-.pcard {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 2rem;
+  justify-content: center;
+}
+.pcard {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* padding: 1.5rem 2rem; */
   border-radius: 1rem;
   overflow: hidden;
-  background: #ebebeb;
-  height: 300px;
-  margin: 1.5rem;
+  background: #fff;
+  height: 350px;
   box-shadow: 0 0.5rem 1rem #d1d9e6;
-  width: 250px !important;
+  width: 290px !important;
   transition: 0.5s;
+  outline: none !important;
+}
+.card__img h2.cardHead {
+  /* font-size: 18px; */
+  text-align: center;
+  width: fit-content;
+  border-bottom: 1px solid #00002e;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 7px;
+  margin-bottom: 30px;
 }
 .card__img p {
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
+  line-height: 2;
+  color: #39385a !important;
 }
 
 .productsWrapper .slick-slide > div {
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: 400px;
   align-items: center;
+  width: 100%;
 }
 .card__name {
   position: absolute;
@@ -86,7 +105,7 @@ h1.productHead::after {
   color: #fff;
   font-weight: bold;
   transition: 0.5s;
-  background: #1d1b4c;
+  background: linear-gradient(to top, #1268dd, #18b4c2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,10 +122,19 @@ h1.productHead::after {
 }
 .pcard:hover .card__img {
   margin-left: 3.5rem;
+  width: 80%;
 }
 
 @media screen and (max-width: 767px) {
-  /* .productsWrapper {
-    flex-direction: column;
-  } */
+  #products {
+    height: auto;
+    padding: 1rem;
+  }
+  h1.productHead {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .productsWrapper {
+    padding: 0 1rem;
+  }
 }

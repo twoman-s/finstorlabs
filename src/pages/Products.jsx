@@ -24,14 +24,14 @@ const Products = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
     speed: 800,
     autoplaySpeed: 4000,
     centerMode: true,
-    centerPadding: "300px",
+    centerPadding: "50px",
     prevArrow: <PrevButton />,
     nextArrow: <NextButton />,
     responsive: [
@@ -52,7 +52,7 @@ const Products = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           centerMode: false,
         },
       },
@@ -66,14 +66,17 @@ const Products = () => {
       <div className="productsWrapper">
         <Slider {...settings}>
           <article class="pcard">
+            {/* <div className="iwra">
+              <div class="aicon">
+                <i class="fas fa-infinity"></i>
+              </div>
+            </div> */}
+
             <div class="card__img">
-              <img
-                src="https://www.marketloops.in/wp-content/uploads/2021/01/PicsArt_01-18-04.38.061.jpg"
-                alt=""
-              />
+              <h2 className="cardHead">Marketloops</h2>
               <p>
-                Helps traders and investors by providing curated stock market
-                insights with market news, result updates etc.
+                Marketloops helps traders and investors by providing curated
+                stock market insights with market news, result updates etc.
               </p>
             </div>
             <div class="card__name">
@@ -84,7 +87,7 @@ const Products = () => {
           </article>
           <article class="pcard">
             <div class="card__img">
-              <img src={easycharts} alt="" />
+              <h2 className="cardHead">EasyCharts</h2>
               <p>
                 EasyCharts stock screener is a productive too for swing traders
                 and day traders. EasyCharts help you to quickly scan momentum
@@ -97,15 +100,23 @@ const Products = () => {
               </a>
             </div>
           </article>
+          <article class="pcard">
+            <div class="card__img">
+              <h2 className="cardHead">Coming Soon</h2>
+              <p>We always find new products</p>
+            </div>
+            <div class="card__name">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
+                Keep in touch
+              </a>
+            </div>
+          </article>
         </Slider>
-        {/* <article class="pcard">
-          <div class="card__img">
-            <img src={marketloops} alt="" />
-          </div>
-          <div class="card__name">
-            <p>Explore Now</p>
-          </div>
-        </article> */}
       </div>
     </section>
   );

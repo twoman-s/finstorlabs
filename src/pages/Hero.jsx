@@ -7,9 +7,14 @@ const Hero = () => {
     <section id="hero">
       <div className="heroContainer">
         <div className="heroContent">
-          <h1>We help you win the Stock Market</h1>
-          <p>Join the next billion revolution</p>
-          <Link to="/coursedetails">Join Us</Link>
+          <h1>Learn Stock Trading Simply</h1>
+          <p>
+            We provide the best stock market training in Kerala. Master
+            technical analysis and trading with our online course.
+          </p>
+          <Link className="herobtn" to="/coursedetails">
+            Know More
+          </Link>
         </div>
         <div className="heroImg">
           <img src={hero} alt="hero" />

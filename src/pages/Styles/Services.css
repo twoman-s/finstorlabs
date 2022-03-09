@@ -8,13 +8,14 @@
 }
 .services-wrapper h1 {
   position: relative;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   /* width: 100%; */
   margin-bottom: 40px;
   display: inline-block;
   padding-right: 80px;
   padding-left: 80px;
+  color: #1d92f2;
 }
 .services-wrapper h1::after,
 .services-wrapper h1::before {
@@ -22,8 +23,8 @@
   top: 50%;
   content: "";
   width: 70px;
-  height: 5px;
-  background: #00002e;
+  height: 4px;
+  background: #1d92f2;
 }
 
 .slick-slide > div {
@@ -63,16 +64,13 @@
   left: 0;
 }
 
-@media screen and (max-width: 900px) {
-}
-
 @media screen and (max-width: 767px) {
   .services-wrapper {
     margin: 50px;
   }
   .services-wrapper h1 {
-    font-size: 1.7rem;
-    line-height: 1;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
 }
 

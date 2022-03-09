@@ -10,7 +10,6 @@ const NavBar = ({ data }) => {
     const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
       navClose = document.getElementById("nav-close");
-    const logoImg = document.getElementById("logo");
 
     /*===== MENU SHOW =====*/
     /* Validate if constant exists */
@@ -92,87 +91,165 @@ const NavBar = ({ data }) => {
   };
   return (
     <header className="header" id="header">
-      <nav className="nav container">
+      <nav className="nav">
         <a href="#" className="nav__logo">
           <img src={plogo} alt="Finstorblabs" id="logo" />
         </a>
+        {data ? (
+          <>
+            <div className="nav__menu" id="nav-menu">
+              <ul className="nav__list">
+                <li className="nav__item">
+                  <a
+                    href="#hero"
+                    className="nav__link active-link"
+                    onClick={handleScrollClick}
+                  >
+                    Home
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="nav__btns" id="nav-btns">
+              {/* <i className="ri-moon-line change-theme" id="theme-button"></i> */}
 
-        <div className="nav__menu" id="nav-menu">
-          {data ? (
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a
-                  href="#hero"
-                  className="nav__link active-link"
-                  onClick={handleScrollClick}
+              <div className="nav__toggle" id="nav-toggle">
+                <li
+                  style={{
+                    listStyleType: "none",
+                    fontSize: "15px",
+                    padding: "0px",
+                  }}
+                  className="nav__item"
                 >
-                  Home
-                </a>
-              </li>
-            </ul>
-          ) : (
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a
-                  href="#hero"
-                  className="nav__link active-link"
-                  onClick={handleScrollClick}
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav__item">
-                <a
-                  href="#products"
-                  className="nav__link"
-                  onClick={handleScrollClick}
-                >
-                  Products
-                </a>
-              </li>
-              <li className="nav__item">
-                <a
-                  href="#aboutus"
-                  className="nav__link"
-                  onClick={handleScrollClick}
-                >
-                  About Us
-                </a>
-              </li>
-              <li className="nav__item">
-                <a
-                  href="#services"
-                  className="nav__link"
-                  onClick={handleScrollClick}
-                >
-                  Services
-                </a>
-              </li>
+                  <a
+                    href="#hero"
+                    className="nav__link active-link"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate("/");
+                    }}
+                  >
+                    Home
+                  </a>
+                </li>
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="nav__menu" id="nav-menu">
+              <ul className="nav__list">
+                <li className="nav__item">
+                  <a
+                    href="#hero"
+                    className="nav__link active-link"
+                    onClick={handleScrollClick}
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a
+                    href="#products"
+                    className="nav__link"
+                    onClick={handleScrollClick}
+                  >
+                    Products
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a
+                    href="#aboutus"
+                    className="nav__link"
+                    onClick={handleScrollClick}
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a
+                    href="#services"
+                    className="nav__link"
+                    onClick={handleScrollClick}
+                  >
+                    Services
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a
+                    href="#partners"
+                    className="nav__link"
+                    onClick={handleScrollClick}
+                  >
+                    Partners
+                  </a>
+                </li>
+                <li className="nav__item">
+                  <a
+                    href="#contactus"
+                    className="nav__link"
+                    onClick={handleScrollClick}
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
 
-              <li className="nav__item">
-                <a
-                  href="#contactus"
-                  className="nav__link"
-                  onClick={handleScrollClick}
-                >
-                  Contact Us
+              <div className="navAddress">
+                <div className="navContent">
+                  <div className="picon">
+                    <i className="fas fa-phone-alt"></i>
+                  </div>
+                  <div className="pcontent">
+                    <p>Requesting a Call:</p>
+                    <span>(+91)9495197609</span>
+                  </div>
+                </div>
+                <div className="navContent">
+                  <div className="picon">
+                    <i className="fas fa-comment-alt"></i>
+                  </div>
+                  <div className="pcontent">
+                    <p>Mail us for help:</p>
+                    <span>info@finstorlabs.com</span>
+                  </div>
+                </div>
+                <div className="navContent">
+                  <div className="picon">
+                    <i className="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div className="pcontent">
+                    <p>Mangattuparamba, Near University</p>
+                    <span>Kannur</span>
+                  </div>
+                </div>
+              </div>
+              <div className="navSocial">
+                <h1>Follow Us</h1>
+                <a href="https://www.instagram.com/marketloops" target="_blank">
+                  <i class="ri-instagram-fill"></i>
                 </a>
-              </li>
-            </ul>
-          )}
+                <a href="http://t.me/vyshakhvijay" target="_blank">
+                  <i class="ri-telegram-fill"></i>
+                </a>
+                <a href="http://youtube.com/vyshakhvijay" target="_blank">
+                  <i class="ri-youtube-fill"></i>
+                </a>
+              </div>
+              <div className="nav__close" id="nav-close">
+                <i className="ri-close-line"></i>
+              </div>
+            </div>
+            <div className="nav__btns" id="nav-btns">
+              {/* <i className="ri-moon-line change-theme" id="theme-button"></i> */}
 
-          <div className="nav__close" id="nav-close">
-            <i className="ri-close-line"></i>
-          </div>
-        </div>
-
-        <div className="nav__btns">
-          {/* <i className="ri-moon-line change-theme" id="theme-button"></i> */}
-
-          <div className="nav__toggle" id="nav-toggle">
-            <i className="ri-menu-line" id="menu"></i>
-          </div>
-        </div>
+              <div className="nav__toggle" id="nav-toggle">
+                <i className="ri-menu-line" id="menu"></i>
+              </div>
+            </div>
+          </>
+        )}
       </nav>
     </header>
   );

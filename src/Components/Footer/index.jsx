@@ -36,14 +36,14 @@ const Footer = () => {
         </div>
         <div className="social-media">
           <h1>Follow Us</h1>
-          <a href="">
-            <i class="ri-instagram-line"></i>
+          <a href="https://www.instagram.com/marketloops" target="_blank">
+            <i class="ri-instagram-fill"></i>
           </a>
-          <a href="">
-            <i class="ri-facebook-box-line"></i>
+          <a href="http://t.me/vyshakhvijay" target="_blank">
+            <i class="ri-telegram-fill"></i>
           </a>
-          <a href="">
-            <i class="ri-youtube-line"></i>
+          <a href="http://youtube.com/vyshakhvijay" target="_blank">
+            <i class="ri-youtube-fill"></i>
           </a>
           <h3>Open Hours</h3>
           <p>Mon – Sat : 9 am – 5 pm,</p>

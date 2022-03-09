@@ -1,10 +1,13 @@
 #hero {
-  height: auto;
+  height: 100vh;
   position: relative;
+  /* margin-top: 50px; */
 }
 
 .heroContainer {
-  padding: 7rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -12,10 +15,10 @@
 .heroContent {
   flex: 1;
   margin: auto 0;
-  text-align: center;
+  text-align: start;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .heroContent h1 {
@@ -30,15 +33,16 @@
   font-size: 20px;
   margin-bottom: 30px;
 }
-.heroContent a {
+.heroContent a.herobtn {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   background: linear-gradient(to right, #1268dd, #18b4c2);
   border-radius: 35px;
   color: #fff;
   transition: 0.5s ease-in-out;
+  text-align: start !important;
 }
-.heroContent a:hover {
+.heroContent a.herobtn:hover {
   font-size: 24px;
 }
 .heroImg {
@@ -50,6 +54,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  #hero {
+    height: auto;
+  }
+
   .heroContainer {
     padding: 30px;
     display: flex;
@@ -61,11 +69,11 @@
     margin: auto 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   .heroContent h1 {
-    font-size: 40px;
+    font-size: 38px;
     font-weight: bolder;
     margin-bottom: 20px;
   }
@@ -75,7 +83,8 @@
     margin-bottom: 20px;
   }
   .heroContent a {
-    font-size: 15px;
+    font-size: 15px !important;
+    text-align: start;
   }
   .heroImg {
     margin: 0 auto;
