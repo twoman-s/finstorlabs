@@ -40,7 +40,6 @@ const NavBar = ({ data }) => {
     /*=============== CHANGE BACKGROUND HEADER ===============*/
     function scrollHeader() {
       const header = document.getElementById("header");
-      const menu = document.getElementById("menu");
       header.style.backgroundColor = "";
       // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
       if (this.scrollY >= 80) {
@@ -56,7 +55,6 @@ const NavBar = ({ data }) => {
     const sections = document.querySelectorAll("section[id]");
     function scrollActive() {
       const scrollY = window.pageYOffset + 90;
-
       sections.forEach((current) => {
         const sectionHeight = current.offsetHeight,
           sectionTop = current.offsetTop - 58,
@@ -92,7 +90,7 @@ const NavBar = ({ data }) => {
   return (
     <header className="header" id="header">
       <nav className="nav">
-        <a href="#" className="nav__logo">
+        <a href="/" className="nav__logo">
           <img src={plogo} alt="Finstorblabs" id="logo" />
         </a>
         {data ? (
@@ -124,7 +122,7 @@ const NavBar = ({ data }) => {
                 >
                   <a
                     href="#hero"
-                    className="nav__link active-link"
+                    className="nav__link"
                     onClick={(e) => {
                       e.preventDefault();
                       navigate("/");
@@ -227,14 +225,26 @@ const NavBar = ({ data }) => {
               </div>
               <div className="navSocial">
                 <h1>Follow Us</h1>
-                <a href="https://www.instagram.com/marketloops" target="_blank">
-                  <i class="ri-instagram-fill"></i>
+                <a
+                  href="https://www.instagram.com/marketloops"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="ri-instagram-fill"></i>
                 </a>
-                <a href="http://t.me/vyshakhvijay" target="_blank">
-                  <i class="ri-telegram-fill"></i>
+                <a
+                  href="http://t.me/vyshakhvijay"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="ri-telegram-fill"></i>
                 </a>
-                <a href="http://youtube.com/vyshakhvijay" target="_blank">
-                  <i class="ri-youtube-fill"></i>
+                <a
+                  href="http://youtube.com/vyshakhvijay"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="ri-youtube-fill"></i>
                 </a>
               </div>
               <div className="nav__close" id="nav-close">

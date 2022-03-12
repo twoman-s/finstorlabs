@@ -67,8 +67,8 @@ const Services = () => {
           <h1>Our Services</h1>
         </div>
         <Slider {...settings}>
-          {data.map((service) => {
-            return <ServicesCard data={service} />;
+          {data.map((service, key) => {
+            return <ServicesCard key={key} data={service} />;
           })}
         </Slider>
       </div>

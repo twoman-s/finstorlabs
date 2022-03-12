@@ -1,6 +1,5 @@
 import React from "react";
 import "./Styles/Products.css";
-import easycharts from "./../Assets/Images/easycharts.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -65,75 +64,58 @@ const Products = () => {
       </div>
       <div className="productsWrapper">
         <Slider {...settings}>
-          <div class="prcard">
-            <div class="primgBx">
-              <img
-                src="https://i0.wp.com/nextlevelpodcast.com/wp-content/uploads/2020/01/Focus-Lens-NextLevelPodcast.jpg?fit=876%2C874&ssl=1"
-                alt=""
-              />
-              <div class="prhead">
-                <i class="fas fa-infinity"></i>
-                <h3>Marketloops</h3>
-              </div>
+          <div className="prcard">
+            <div className="iconBx">
+              <i className="fas fa-infinity"></i>
             </div>
-            <div class="prcontent">
-              <a href="https://www.marketloops.in/" target="_blank">
-                Marketloops
-              </a>
-              <p>
-                Marketloops helps traders and investors by providing curated
-                stock market insights with market news, result updates etc.
-              </p>
+            <h2 className="phead">Marketloops</h2>
+            <div className="prcontent">
+              Marketloops helps traders and investors by providing curated stock
+              market insights with market news, result updates etc.
             </div>
+            <a
+              href="https://www.marketloops.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore Now
+            </a>
           </div>
-          <div class="prcard">
-            <div class="primgBx">
-              <img
-                src="https://i0.wp.com/nextlevelpodcast.com/wp-content/uploads/2020/01/Focus-Lens-NextLevelPodcast.jpg?fit=876%2C874&ssl=1"
-                alt=""
-              />
-              <div class="prhead">
-                <i class="far fa-chart-bar"></i>
-                <h3>EasyCharts</h3>
-              </div>
+          <div className="prcard">
+            <div className="iconBx">
+              <i className="fas fa-chart-line"></i>
             </div>
-            <div class="prcontent">
-              <a href="https://www.easycharts.in/" target="_blank">
-                EasyCharts
-              </a>
-
-              <p>
-                EasyCharts stock screener is a productive too for swing traders
-                and day traders. EasyCharts help you to quickly scan momentum
-                stocks.
-              </p>
+            <h2 className="phead">EasyCharts</h2>
+            <div className="prcontent">
+              EasyCharts stock screener is a productive too for swing traders
+              and day traders. EasyCharts help you to quickly scan momentum
+              stocks.
             </div>
+            <a
+              href="https://www.easycharts.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore Now
+            </a>
           </div>
-          <div class="prcard">
-            <div class="primgBx">
-              <img
-                src="https://i0.wp.com/nextlevelpodcast.com/wp-content/uploads/2020/01/Focus-Lens-NextLevelPodcast.jpg?fit=876%2C874&ssl=1"
-                alt=""
-              />
-              <div class="prhead">
-                <i class="fas fa-bullseye"></i>
-                <h3>Coming Soon</h3>
-              </div>
+          <div className="prcard">
+            <div className="iconBx">
+              <i className="fas fa-bullseye"></i>
             </div>
-            <div class="prcontent">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                Keep in touch
-              </a>
-              <p>
-                We are launching new products and services soon to help traders
-                and investors.
-              </p>
+            <h2 className="phead">Coming Soon</h2>
+            <div className="prcontent">
+              We are launching new products and services soon to help traders
+              and investors.
             </div>
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
+              Keep in touch
+            </a>
           </div>
         </Slider>
       </div>
@@ -142,56 +124,3 @@ const Products = () => {
 };
 
 export default Products;
-
-{
-  /* <article class="pcard">
-    
-
-            <div class="card__img">
-              <h2 className="cardHead">Marketloops</h2>
-              <p>
-                Marketloops helps traders and investors by providing curated
-                stock market insights with market news, result updates etc.
-              </p>
-            </div>
-            <div class="card__name">
-              <a href="https://www.marketloops.in/" target="_blank">
-                Explore Now
-              </a>
-            </div>
-          </article>
-          <article class="pcard">
-            <div class="card__img">
-              <h2 className="cardHead">EasyCharts</h2>
-              <p>
-                EasyCharts stock screener is a productive too for swing traders
-                and day traders. EasyCharts help you to quickly scan momentum
-                stocks.
-              </p>
-            </div>
-            <div class="card__name">
-              <a href="https://www.easycharts.in/" target="_blank">
-                Explore Now
-              </a>
-            </div>
-          </article>
-          <article class="pcard">
-            <div class="card__img">
-              <h2 className="cardHead">Coming Soon</h2>
-              <p>
-                We are launching new products and services soon to help traders
-                and investors.
-              </p>
-            </div>
-            <div class="card__name">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                Keep in touch
-              </a>
-            </div>
-          </article> */
-}

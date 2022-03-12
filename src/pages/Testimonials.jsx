@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Styles/Testimonials.css";
 import quote from "./../Assets/Images/quote.png";
 import Slider from "react-slick";
@@ -68,9 +68,9 @@ const Testimonials = () => {
       <div className="testimonials">
         <div className="slider-wrapper">
           <Slider {...settings}>
-            {data.map((testimonoal) => {
+            {data.map((testimonoal, key) => {
               return (
-                <div className="tcard">
+                <div className="tcard" key={key}>
                   <div className="timgBx">
                     <img src={testimonoal.img} alt={testimonoal.name} />
                   </div>
