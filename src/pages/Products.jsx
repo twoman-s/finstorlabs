@@ -31,7 +31,7 @@ const Products = () => {
     speed: 800,
     autoplaySpeed: 4000,
     centerMode: true,
-    centerPadding: "50px",
+    centerPadding: "20px",
     prevArrow: <PrevButton />,
     nextArrow: <NextButton />,
     responsive: [
@@ -65,12 +65,87 @@ const Products = () => {
       </div>
       <div className="productsWrapper">
         <Slider {...settings}>
-          <article class="pcard">
-            {/* <div className="iwra">
-              <div class="aicon">
+          <div class="prcard">
+            <div class="primgBx">
+              <img
+                src="https://i0.wp.com/nextlevelpodcast.com/wp-content/uploads/2020/01/Focus-Lens-NextLevelPodcast.jpg?fit=876%2C874&ssl=1"
+                alt=""
+              />
+              <div class="prhead">
                 <i class="fas fa-infinity"></i>
+                <h3>Marketloops</h3>
               </div>
-            </div> */}
+            </div>
+            <div class="prcontent">
+              <a href="https://www.marketloops.in/" target="_blank">
+                Marketloops
+              </a>
+              <p>
+                Marketloops helps traders and investors by providing curated
+                stock market insights with market news, result updates etc.
+              </p>
+            </div>
+          </div>
+          <div class="prcard">
+            <div class="primgBx">
+              <img
+                src="https://i0.wp.com/nextlevelpodcast.com/wp-content/uploads/2020/01/Focus-Lens-NextLevelPodcast.jpg?fit=876%2C874&ssl=1"
+                alt=""
+              />
+              <div class="prhead">
+                <i class="far fa-chart-bar"></i>
+                <h3>EasyCharts</h3>
+              </div>
+            </div>
+            <div class="prcontent">
+              <a href="https://www.easycharts.in/" target="_blank">
+                EasyCharts
+              </a>
+
+              <p>
+                EasyCharts stock screener is a productive too for swing traders
+                and day traders. EasyCharts help you to quickly scan momentum
+                stocks.
+              </p>
+            </div>
+          </div>
+          <div class="prcard">
+            <div class="primgBx">
+              <img
+                src="https://i0.wp.com/nextlevelpodcast.com/wp-content/uploads/2020/01/Focus-Lens-NextLevelPodcast.jpg?fit=876%2C874&ssl=1"
+                alt=""
+              />
+              <div class="prhead">
+                <i class="fas fa-bullseye"></i>
+                <h3>Coming Soon</h3>
+              </div>
+            </div>
+            <div class="prcontent">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
+                Keep in touch
+              </a>
+              <p>
+                We are launching new products and services soon to help traders
+                and investors.
+              </p>
+            </div>
+          </div>
+        </Slider>
+      </div>
+    </section>
+  );
+};
+
+export default Products;
+
+{
+  /* <article class="pcard">
+    
 
             <div class="card__img">
               <h2 className="cardHead">Marketloops</h2>
@@ -118,11 +193,5 @@ const Products = () => {
                 Keep in touch
               </a>
             </div>
-          </article>
-        </Slider>
-      </div>
-    </section>
-  );
-};
-
-export default Products;
+          </article> */
+}

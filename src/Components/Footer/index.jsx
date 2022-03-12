@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer>
       <div className="waves">
-        <div className="wave" id="wave1"></div>
-        <div className="wave" id="wave2"></div>
+        {/* <div className="wave" id="wave1"></div> */}
+        {/* <div className="wave" id="wave2"></div> */}
       </div>
       <div className="footer-content">
         <div className="fabout">
@@ -50,9 +50,7 @@ const Footer = () => {
           <p>Sunday : Closed</p>
         </div>
       </div>
-      <div className="rights">
-        Created by Alex Antony | 2022 © All rights reserved by finstorlabs
-      </div>
+      <div className="rights">2022 © All rights reserved by finstorlabs</div>
     </footer>
   );
 };
