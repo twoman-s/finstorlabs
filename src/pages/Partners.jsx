@@ -15,11 +15,11 @@ const Partners = () => {
         </div>
         <div className="partners">
           <div className="partnerlist zerodha">
-            <a href="https://zerodha.com/open-account?c=ZMPEOO" target="_blank">
+            <a href="https://zerodha.com/open-account?c=ZMPEOO" target="_blank" rel="noreferrer">
               <img src={zerodha} alt="" />
             </a>
           </div>
-          <div className="partnerlist upstox" target="_blank">
+          <div className="partnerlist upstox" target="_blank" rel="noreferrer">
             <a href="https://bit.ly/2QSQvD2">
               <img src={upstox} alt="" />
             </a>

@@ -53,7 +53,7 @@ const CourseDetails = () => {
                 <div className="instuctorSocial">
                   <div className="sIcon">
                     <div className="followerCounty">101K</div>
-                    <a href="http://youtube.com/vyshakhvijay" target="_blank">
+                    <a href="http://youtube.com/vyshakhvijay" target="_blank" rel="noreferrer">
                       <div className="sImg">
                         <img src={youtubeLogo} alt="" />
                       </div>
@@ -62,7 +62,7 @@ const CourseDetails = () => {
                   </div>
                   <div className="sIcon">
                     <div className="followerCountt">31.5K</div>
-                    <a href="http://t.me/vyshakhvijay" target="_blank">
+                    <a href="http://t.me/vyshakhvijay" target="_blank" rel="noreferrer">
                       <div className="sImg">
                         <img src={telegramLogo} alt="" />
                       </div>
@@ -70,10 +70,10 @@ const CourseDetails = () => {
                     <p>Members</p>
                   </div>
                   <div className="sIcon">
-                    <div className="followerCounti">4.5K</div>
+                    <div className="followerCounti">10.2K</div>
                     <a
-                      href="https://www.instagram.com/marketloops"
-                      target="_blank"
+                      href="https://instagram.com/vyshakhvijay?igshid=YmMyMTA2M2Y="
+                      target="_blank" rel="noreferrer"
                     >
                       <div className="sImg">
                         <img src={instagramLogo} alt="" />

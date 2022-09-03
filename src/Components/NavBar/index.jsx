@@ -226,7 +226,7 @@ const NavBar = ({ data }) => {
               <div className="navSocial">
                 <h1>Follow Us</h1>
                 <a
-                  href="https://www.instagram.com/marketloops"
+                  href="https://instagram.com/vyshakhvijay?igshid=YmMyMTA2M2Y="
                   target="_blank"
                   rel="noreferrer"
                 >
